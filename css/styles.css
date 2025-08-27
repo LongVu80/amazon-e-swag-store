@@ -144,3 +144,8 @@ select, input[type="number"], input[type="text"], input[type="email"] {
   padding: .6rem .9rem; border-radius: 12px; box-shadow: var(--shadow);
 }
 .hidden { display: none; }
+
+#about{
+  text-align: center;
+ margin-bottom: 20px;
+}
