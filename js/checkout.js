@@ -123,7 +123,7 @@ document.getElementById('checkoutForm').addEventListener('submit', (e)=>{
   localStorage.removeItem('cart');
 
   // Compose a mailto to HR
-  const subject = encodeURIComponent(`Order from ${fullName} (${companyId}) - Total ${fmt(total)}`);
+  const subject = encodeURIComponent(`Order from ${fullName} (${companyId}) - Total ${fmt(subtotal)}`);
   const bodyObj = {
     buyer: order.buyer,
     totals: { subtotal, creditApplied: applied, total },
@@ -136,7 +136,7 @@ document.getElementById('checkoutForm').addEventListener('submit', (e)=>{
     `Hello HR,\n\n`+
     `An order has been placed.\n\n`+
     `Buyer: ${fullName}\nCompany ID/Alias: ${companyId}\n`+
-    `eSwag available: $${eswag.toFixed(2)}\n`+
+    `eSwag available: $${eswag.toFixed(2)} (Please Verify)\n `+
     `Subtotal: ${fmt(subtotal)}\nCredit applied: -${fmt(applied)}\nTotal to pay: ${fmt(total)}\n\n`+
     `Items:\n`+
     bodyObj.items.map((i,idx)=>`${idx+1}. ${i.title} — ${fmt(i.price)} × ${i.qty}`+(i.size?` [${i.size}]`:'')+(i.color?` {${i.color}}`:'')).join('\n')+
