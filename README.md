@@ -1,5 +1,6 @@
 # FakeStore E‑commerce (Vanilla HTML/CSS/JS)
 
+- website: https://longvu80.github.io/amazon-e-swag-store/
 - initial the Catalog pulls live data from https://fakestoreapi.com/products, but then I switch to local API for easy access.
 - Hover a card to show **Add**; click a card to open details modal.
 - Clothing items let you choose **size** and **color**.
