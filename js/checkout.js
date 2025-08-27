@@ -12,6 +12,7 @@ const creditAppliedEl = document.getElementById('creditApplied');
 const grandTotalEl = document.getElementById('grandTotal');
 const eswagInput = document.getElementById('eswag');
 const toast = document.getElementById('toast');
+// const elabel = document.getElementsById('credit-row');
 
 function render(){
   const cart = getCart();
@@ -62,6 +63,17 @@ function render(){
   const applied = Math.min(credit, sub);
   creditAppliedEl.textContent = `-$${applied.toFixed(2)}`;
   grandTotalEl.textContent = fmt(sub - applied);
+
+  // if (credit) {
+  //   eswagInput.style.backgroundColor = "";
+  //   // elabel.style.backgroundColor = "rgba(255, 0, 0, 0.2)";
+  // } else 
+  if (credit > sub) {
+    eswagInput.style.backgroundColor = "rgba(0, 200, 0, 0.2)"; // red if over subtotal
+  } else {
+    eswagInput.style.backgroundColor = "rgba(255, 0, 0, 0.5)"; // green if valid
+    // elabel.style.backgroundColor = "rgba(255, 0, 0, 0.2)";
+  }
 }
 
 function changeQty(index, delta){
@@ -142,5 +154,30 @@ document.getElementById('checkoutForm').addEventListener('submit', (e)=>{
     window.location.href = 'index.html';
   }, 1200);
 });
+
+// Hook into the eSwag input
+// const eswagInput = document.getElementById("eswag");
+
+// // Style update function
+// function validateEswag() {
+//   const val = Number(eswagInput.value || 0);
+//   // Grab current subtotal from the page
+//   const subtotalText = document.getElementById("subtotal").textContent.replace("$","");
+//   const subtotal = parseFloat(subtotalText) || 0;
+
+//   if (!val) {
+//     eswagInput.style.backgroundColor = "";
+//   } else if (val > subtotal) {
+//     eswagInput.style.backgroundColor = "rgba(255, 0, 0, 0.2)"; // light red
+//   } else {
+//     eswagInput.style.backgroundColor = "rgba(0, 200, 0, 0.2)"; // light green
+//   }
+// }
+
+// // Trigger validation on input
+// eswagInput.addEventListener("input", validateEswag);
+
+// Run once on page load too
+// validateEswag();
 
 render();
