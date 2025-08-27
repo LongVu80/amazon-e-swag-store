@@ -1,0 +1,333 @@
+[
+  {
+    "id": 1,
+    "title": "Essentials Cotton Tee",
+    "price": 14.99,
+    "description": "Soft 100% cotton T‑shirt with classic fit.",
+    "category": "men's clothing",
+    "image": "assets/images/mens-tee-1.png",
+    "rating": {
+      "rate": 4.3,
+      "count": 287
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "yellow",
+      "red",
+      "green",
+      "blue",
+      "grey",
+      "pink",
+      "orange"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Athletic Joggers",
+    "price": 29.5,
+    "description": "Lightweight joggers with tapered leg and zip pockets.",
+    "category": "men's clothing",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800",
+    "rating": {
+      "rate": 4.5,
+      "count": 142
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "grey",
+      "blue",
+      "green"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Denim Jacket",
+    "price": 49.99,
+    "description": "Midweight denim jacket with metal buttons and inner pocket.",
+    "category": "men's clothing",
+    "image": "https://images.unsplash.com/photo-1548883354-7622d3f1191b?q=80&w=800",
+    "rating": {
+      "rate": 4.1,
+      "count": 78
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "blue",
+      "black",
+      "grey"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Ribbed Knit Dress",
+    "price": 39.0,
+    "description": "Midi dress in stretchy ribbed knit for everyday comfort.",
+    "category": "women's clothing",
+    "image": "assets/images/womens-dress-1.png",
+    "rating": {
+      "rate": 4.7,
+      "count": 201
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "pink",
+      "orange"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Everyday Leggings",
+    "price": 19.99,
+    "description": "High-waist leggings with buttery-soft feel.",
+    "category": "women's clothing",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800",
+    "rating": {
+      "rate": 4.2,
+      "count": 356
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "grey",
+      "blue"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Oversized Hoodie",
+    "price": 34.95,
+    "description": "Cozy fleece hoodie with kangaroo pocket and adjustable drawcords.",
+    "category": "women's clothing",
+    "image": "https://images.unsplash.com/photo-1512163143273-bde0e3cc7404?q=80&w=800",
+    "rating": {
+      "rate": 4.6,
+      "count": 189
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "yellow",
+      "red",
+      "green",
+      "blue",
+      "grey",
+      "pink",
+      "orange"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Gold-Plated Hoop Earrings",
+    "price": 24.0,
+    "description": "Nickel-free gold-plated hoops with secure clasp.",
+    "category": "jewelery",
+    "image": "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=800",
+    "rating": {
+      "rate": 4.8,
+      "count": 95
+    }
+  },
+  {
+    "id": 8,
+    "title": "Minimal Silver Necklace",
+    "price": 32.0,
+    "description": "Sterling silver chain with small circle pendant.",
+    "category": "jewelery",
+    "image": "assets/images/necklace-1.png",
+    "rating": {
+      "rate": 4.4,
+      "count": 66
+    }
+  },
+  {
+    "id": 9,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Over‑ear headphones with 30‑hour battery and fast charge.",
+    "category": "electronics",
+    "image": "https://images.unsplash.com/photo-1518444028785-8f58567bfaab?q=80&w=800",
+    "rating": {
+      "rate": 4.4,
+      "count": 512
+    }
+  },
+  {
+    "id": 10,
+    "title": "4K Action Camera",
+    "price": 119.0,
+    "description": "Waterproof action camera with EIS and wide-angle lens.",
+    "category": "electronics",
+    "image": "assets/images/action-cam-1.png",
+    "rating": {
+      "rate": 4.0,
+      "count": 231
+    }
+  },
+  {
+    "id": 11,
+    "title": "USB‑C GaN Charger 65W",
+    "price": 29.99,
+    "description": "Compact GaN charger supports PD/PPS for phones and laptops.",
+    "category": "electronics",
+    "image": "https://images.unsplash.com/photo-1587825140400-03fc1c85f7c6?q=80&w=800",
+    "rating": {
+      "rate": 4.5,
+      "count": 340
+    }
+  },
+  {
+    "id": 12,
+    "title": "Classic Polo Shirt",
+    "price": 22.5,
+    "description": "Breathable pique polo with two-button placket.",
+    "category": "men's clothing",
+    "image": "assets/images/mens-polo-1.png",
+    "rating": {
+      "rate": 4.1,
+      "count": 133
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "grey",
+      "green"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Slim Chinos",
+    "price": 35.0,
+    "description": "Stretch cotton chinos with slim silhouette.",
+    "category": "men's clothing",
+    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=800",
+    "rating": {
+      "rate": 4.3,
+      "count": 172
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "grey",
+      "blue",
+      "khaki"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Cotton Crewneck Sweater",
+    "price": 27.99,
+    "description": "Mid‑weight knit for transitional weather.",
+    "category": "women's clothing",
+    "image": "assets/images/womens-sweater-1.png",
+    "rating": {
+      "rate": 4.2,
+      "count": 118
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "pink",
+      "blue",
+      "grey"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Yoga Tank Top",
+    "price": 16.99,
+    "description": "Moisture‑wicking tank with racerback design.",
+    "category": "women's clothing",
+    "image": "https://images.unsplash.com/photo-1605296867724-b343e649b3d3?q=80&w=800",
+    "rating": {
+      "rate": 4.6,
+      "count": 254
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "yellow",
+      "red",
+      "green",
+      "blue",
+      "grey",
+      "pink",
+      "orange"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Smart LED Bulb (2‑Pack)",
+    "price": 21.0,
+    "description": "Dimmable Wi‑Fi bulbs with app and voice control.",
+    "category": "electronics",
+    "image": "assets/images/bulb-1.png",
+    "rating": {
+      "rate": 4.3,
+      "count": 410
+    }
+  }
+]

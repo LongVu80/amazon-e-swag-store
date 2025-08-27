@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FakeStore Shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/bag.svg" alt="" class="brand-icon">
+      <span>FakeStore Shop</span>
+    </div>
+    <nav class="nav">
+      <button id="filter-all" class="chip is-active" data-cat="all">All</button>
+      <button class="chip" data-cat="men's clothing">Men</button>
+      <button class="chip" data-cat="women's clothing">Women</button>
+      <button class="chip" data-cat="jewelery">Jewelery</button>
+      <button class="chip" data-cat="electronics">Electronics</button>
+    </nav>
+    <a href="checkout.html" class="cart-btn" id="cartBtn" title="Go to cart">
+      <span>Cart</span>
+      <span class="badge" id="cartCount">0</span>
+    </a>
+  </header>
+
+  <main class="container">
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <!-- Product Modal -->
+  <div id="modal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-body">
+        <img id="mImg" alt="" class="modal-img">
+        <div class="modal-info">
+          <h2 id="mTitle"></h2>
+          <p class="muted" id="mCategory"></p>
+          <p id="mDesc" class="desc"></p>
+          <div class="price-row">
+            <span class="price" id="mPrice"></span>
+          </div>
+
+          <div id="variantSection" class="variants hidden">
+            <div class="variant">
+              <label for="sizeSelect">Size</label>
+              <select id="sizeSelect">
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div class="variant">
+              <label for="colorSelect">Color</label>
+              <select id="colorSelect">
+                <option>black</option>
+                <option selected>white</option>
+                <option>yellow</option>
+                <option>red</option>
+                <option>green</option>
+                <option>blue</option>
+                <option>grey</option>
+                <option>pink</option>
+                <option>orange</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button id="mAddBtn" class="btn primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <template id="cardTemplate">
+    <div class="card">
+      <div class="card-media">
+        <img class="card-img" alt="">
+        <!-- <button class="add-overlay">Add</button> -->
+      </div>
+      <div class="card-body">
+        <div class="card-title"></div>
+        <div class="card-price-row">
+          <span class="card-price"></span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - FakeStore Shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/bag.svg" alt="" class="brand-icon">
+      <span>Checkout</span>
+    </div>
+    <a href="index.html" class="link">&larr; Continue shopping</a>
+  </header>
+
+  <main class="container">
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cartEmpty" class="muted hidden">Your cart is empty.</div>
+      <table class="cart-table" id="cartTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Variant</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+
+      <div class="totals">
+        <div class="credit-row">
+          <label for="eswag">Enter your eSwag available</label>
+          <input type="number" id="eswag" min="0" step="1" value="0">
+        </div>
+        <div><span>Items:</span><span id="itemsCount">0</span></div>
+        <div><span>Subtotal:</span><span id="subtotal">$0.00</span></div>
+        
+        <div><span>Credit applied:</span><span id="creditApplied">-$0.00</span></div>
+        <div class="total-row"><span>Total to pay:</span><span id="grandTotal">$0.00</span></div>
+      </div>
+    </section>
+
+    <section class="checkout-form">
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" required placeholder="Jane Doe">
+        </div>
+        <div class="field">
+          <label for="companyId">Company ID / Alias</label>
+          <input type="text" id="companyId" required placeholder="ACME-1234">
+        </div>
+        <div class="field">
+          <label for="hrEmail">HR Email</label>
+          <input type="email" id="hrEmail" required placeholder="hr@example.com">
+        </div>
+        <button class="btn primary" type="submit">Place order</button>
+      </form>
+      <p class="muted small">No server needed: your order is saved to this browser and a prefilled email is opened to your HR.</p>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden">Order saved!</div>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>
